@@ -1,0 +1,192 @@
+body {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(59,53,97,1) 75%, rgba(210,214,239,1) 100%);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+p {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 90%;
+    background-color: #fff;
+    border: 6px dashed #ED6A5A;
+    font-family: 'Monomakh', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin-bottom: 150px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ED6A5A;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 14px #943f34;
+}
+
+.button:hover {
+    background-color: #d16456;
+}
+
+.button:active {
+  background-color: #d16456;
+  box-shadow: 0 14px #66332c;
+  transform: translateY(4px);
+}
+
+#randomButton {
+    background-color: #e96060;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 300px;
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+#randomButton:hover {
+    background-color: #ffa9a9;
+    transform: scale(1.05);
+}
+
+#randomButton:active {
+    background-color: #ff8e8e;
+    transform: scale(0.95);
+}
+
+.footer {
+    background-color: #1c1c23;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;
+    padding: 10px 0;
+}
+
+.footer .row {
+    margin: 1% 0;
+    padding: 0.6% 0;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+ 
+.social-icons a:hover img {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+
+
+.topnav {
+    background: linear-gradient(45deg, #1d232d, #31304b);
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid rgba(91, 2, 255, 0.2);
+}
+
+.topnav a {
+    float: left;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #3498db;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(52, 152, 219, 0.7);
+}
+
+.topnav a.active {
+    background-color: #ea1919;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(188, 26, 26, 0.8);
+}
+
+.topnav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    z-index: -1;
+    opacity: 0.2;
+}
