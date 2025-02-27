@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factss</title>
+    <link rel="stylesheet" href="style_main.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="facts.html">Random Facts</a>
+        <a href="nocss.html">NO CSS</a>
+        <a href="quote.html">Quotes</a>
+    </div>
+    <br>
+    <br>
+    <h1>RANDOM FACT</h1>
+    <br>
+    <br>
+    <button onclick="showFact()" class="button">Show fact</button>
+    <br>
+    <p id="fact-text">Press the button to learn something new!</p>
+    <footer class="footer">
+                    <div class="row">
+                        <div class="social-icons">
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=georgiyromanovskiy@kingsway.college" target="_blank">
+                                <img src="gmail.svg" alt="Gmail">
+                            </a>
+                            <a href="https://github.com/boxes-in-apples" target="_blank">
+                                <img src="github.svg" alt="Github">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <ul>
+                            <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=georgiyromanovskiy@kingsway.college">Contact us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="sources.html">Sources</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+    BOXES IN APPLES Copyright © 2025 Boxes in apples - No lefts reserved || AHHHHHHHH IM TIRED
+                    </div>
+        </footer>
+    <script>
+        function showFact() {
+            const facts = [
+                "In 90-s internet was very slow!",
+                "First website was created in 1991.",
+                "GIF exists since 1987 year"
+            ];
+            document.getElementById("fact-text").textContent = facts[Math.floor(Math.random() * facts.length)];
+        }
+    </script>
+</body>
+</html>
